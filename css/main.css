@@ -113,9 +113,11 @@ html {
 body {
   font-family: sans-serif;
   font-size: 1.25em;
+  width: 100%;
 }
 
 .page-header {
+  z-index: 1;
   background-color: #000000;
   color: #ffffff;
   padding: 1em;
@@ -166,18 +168,55 @@ body {
   margin: 0 auto;
 }
 
-.about {
-    border-bottom: 1px solid #bababa;
+.page-content {
+  position: relative;
+  width: 100%;
 }
 
-.about h3 p {
-    margin: 0 25px;
+article {
+    position: relative;
+    border-bottom: 1px solid #dadada;
+    padding: 30px 20px;
+    width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
+a figure {
+  position:relative;
+  margin: 0;
+  display: inline-block;
+  padding-right:5px;
+  padding-bottom:10px;
+}
+
+a figure *{
+  width: 100%;
+}
+
+a figcaption {
+  display: inline;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .5);
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-size: 2em;
+  padding-top:30%;
+  font-weight: bold;
+}
+
+a figcaption:hover {
+  background-color: rgba(255, 255, 255, .0);
+}
 
 footer {
+  width: 100%;
   text-align: center;
-  border-top: 1px solid #bababa;
 }
 
  /* ==========================================================================
